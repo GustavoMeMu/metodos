@@ -1,0 +1,82 @@
+body {
+    background-image: url('../../public/css/img/fondo.jpeg'); /* Ruta correcta de la imagen */
+    background-position: center; /* Centrado de la imagen de fondo */
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
+    color: white;
+}
+
+form {
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo semi-transparente para el formulario */
+    backdrop-filter: blur(10px); /* Efecto de desenfoque */
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Sombra más pronunciada */
+    padding: 40px;
+    width: 90%; /* Ancho del formulario en dispositivos móviles */
+    max-width: 500px; /* Ancho máximo del formulario */
+}
+
+.c-user i {
+    color: #c081ff; /* Color del icono del usuario */
+}
+
+.text-highlight {
+    color: #fff;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.input-group {
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro para los campos de entrada */
+    border-radius: 10px;
+    margin-bottom: 15px; /* Espacio entre campos */
+}
+
+.input-group-text {
+    background-color: transparent; /* Mantener el fondo transparente para el texto */
+    border: none;
+    color: #fffbfb;
+}
+
+.form-control {
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo de los campos */
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    font-size: 1.5rem;
+    padding: 10px; /* Espaciado interno */
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: #ffcc00; /* Borde al enfocar en color amarillo */
+}
+
+.c-button .btn {
+    background-color: #4e1a75; /* Color del botón principal */
+    color: white;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    transition: background-color 0.3s; /* Transición suave para el hover */
+}
+
+.c-button .btn:hover {
+    background-color: #603382; /* Color del botón al pasar el mouse */
+}
+
+a.text-white {
+    color: #ffcc00; /* Color de los enlaces */
+    font-weight: bold;
+    text-decoration: underline; /* Subrayado de enlaces */
+}
+
+a.text-white:hover {
+    color: #4e1a75; /* Color de los enlaces al pasar el mouse */
+}
+
+.text-white {
+    color: #fff; /* Color del texto */
+}

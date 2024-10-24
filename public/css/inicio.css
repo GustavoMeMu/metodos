@@ -1,0 +1,138 @@
+body {
+   background-color: #d7b3f6;
+    background-position: 0%;
+    
+    background-size: cover;
+}
+
+
+h3{
+    font-size: 3.5rem; /* Aumenta el tamaño de la fuente */
+    color: #ffffff; /* Color de texto oscuro */
+}
+h2 {
+    font-size: 2.5rem; /* Aumenta el tamaño de la fuente */
+    color: #ffffff; /* Color de texto oscuro */
+}
+.c-datos {
+    background-color: rgba(255, 255, 255, 0.135); 
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    margin-bottom: 20px;
+    padding: 20px; 
+}
+
+form {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    backdrop-filter: blur(10px); 
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.215);
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.input-group-text {
+    background-color: #420b85; 
+    color: white; 
+}
+
+.table {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    color: white;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.registrar_producto {
+    width: 100%;
+    max-width: 300px;
+    background-color: purple; 
+    border: none;
+    border-radius: 15px;
+    color: #ffffff; 
+    font-size: 1.5rem; 
+    transition: transform 0.2s ease; 
+}
+
+.registrar_producto:hover {
+    transform: scale(1.05); 
+    background-color: #d14ee2;
+    color: black;
+}
+
+.btn-primary {
+    background-color: #c881bb; /* Verde más claro */
+    border: none;
+}
+
+.btn-secondary {
+    background-color: #7d0296; 
+    color: white;
+}
+/* apartir de aqui empieza el modal para editar */
+.modal-content {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+}
+
+.modal-header, .modal-footer {
+    border: none;
+}
+
+.modal-header {
+    background-color: #ce85e0; 
+}
+
+.modal-title {
+    color: #3d2d4b; 
+}
+.table {
+    width: 100%; /* Asegúrate de que ocupe el 100% del contenedor */
+    margin-top: 20px; /* Espacio superior */
+    border-collapse: collapse; /* Para que no haya espacios entre celdas */
+    font-family: Arial, sans-serif; /* Cambia la fuente a Arial */
+    color: white;
+}
+
+.table th, .table td {
+    padding: 12px; /* Espaciado interno */
+    text-align: center; /* Alinear texto al centro */
+    font-size: 1rem; /* Tamaño de letra */
+    color: #ffffff; /* Color del texto */
+}
+
+.table thead {
+    background-color: rgba(123, 195, 173, 0.8); /* Color de fondo para encabezados */
+    color: white; /* Color del texto en el encabezado */
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: rgba(211, 0, 244, 0.3); /* Color de fondo para filas pares */
+}
+
+
+
+.action-btn {
+    padding: 8px 12px; /* Espaciado interno de los botones */
+    background-color: #89019e; /* Color de fondo del botón */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    color: white; /* Color del texto */
+    font-size: 0.9rem; /* Tamaño de la fuente */
+    transition: background-color 0.3s ease; /* Efecto de transición */
+}
+
+.action-btn:hover {
+    background-color: #e207c5; /* Cambiar color al pasar el mouse */
+}

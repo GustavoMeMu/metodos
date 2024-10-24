@@ -1,0 +1,82 @@
+body {
+    background-image: url('../../public//css/img/fondo.jpeg');
+    background-position: 0%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    color: white;
+}
+
+form {
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo semi-transparente */
+    backdrop-filter: blur(10px); /* Efecto de desenfoque */
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Sombra */
+    padding: 40px;
+    width: 50%; /* Ancho del formulario */
+}
+
+.c-user i {
+    color: #c081ff; /* Icono del usuario */
+}
+
+.text-highlight {
+    color: #fff;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.input-group {
+    background-color: rgb(0, 0, 0); /* Fondo de los campos de entrada */
+    border-radius: 10px;
+}
+
+.input-group-text {
+    background-color: transparent;
+    border: none;
+    color: #fffbfb;
+}
+
+.form-control {
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo de los campos */
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    font-size: 1.5rem;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: #fff; /* Borde al enfocar */
+}
+
+.c-button .btn {
+    background-color: #4e1a75; /* Botón principal */
+    color: white;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 1.2em;
+}
+
+.c-button .btn:hover {
+    background-color: #603382; /* Hover */
+    color: #ffffff;
+}
+
+a.text-primary {
+    color: #ffcc00; /* Link de creación de cuenta */
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+a.text-primary:hover {
+    color: #4e1a75; /* Hover del link */
+}
+
+.text-white {
+    color: #fff;
+}
