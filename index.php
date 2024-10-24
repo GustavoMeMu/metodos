@@ -14,40 +14,34 @@ if (!isset($_SESSION['usuario'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="<?= CSS . "bootstrap.min.css"; ?>">
-    <link rel="stylesheet" href="<?= CSS . "dt.css"; ?>">
-    <link rel="stylesheet" href="../../unidad2/prueba/public/css/inicio.css">
+    <link rel="stylesheet" href="<?= CSS . "inicio.css"; ?>">
     <link rel="stylesheet" href="<?= ICONS . "bootstrap-icons.css"; ?>">
+    <link rel="stylesheet" href="<?= CSS . "table.css"; ?>">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./public/js/table.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="<?=JS.'dt.js'?>"></script>
+
     <title>Formulario de datos</title>
 </head>
 
 <body class="vh-100">
-    <!-- Modificaciones de estilos -->
-    <div class="row m-4 c-datos">
-        <div class="d-flex justify-content-around align-items-center w-100">
-            <h3 class="text-center m-0">Bienvenido</h3>
-            <p style="color: #d14ee2; font-size: 2.2rem; text-decoration: underline; margin-top: 10px;" class="text-center m-0">
-                <?= $_SESSION['usuario']['email'] ?>
-            </p>
-
-            <div>
-                <button class="btn btn-secondary" id="btn-editar" data-bs-toggle="modal" data-bs-target="#editarUsuarioModal">
-                    Editar Sesión
-                </button>
-
-                <button class="btn btn-danger" id="btn-cerrar">
-                    Cerrar sesión
-                </button>
-            </div>
-        </div>
+    <div class="text-center">
+        <h3 class="m-0">Bienvenido</h3>
+        <p><?= $_SESSION['usuario']['email'] ?></p>
+    </div>
+    <div class="text-center mb-4">
+        <button class="btn btn-secondary me-2" id="btn-editar" data-bs-toggle="modal" data-bs-target="#editarUsuarioModal">
+            Editar Sesión
+        </button>
+        <button class="btn btn-danger" id="btn-cerrar">
+            Cerrar sesión
+        </button>
     </div>
 
     <div class="row justify-content-center">
-        <div class="col-8 p-5">
+        <div class="col-6 p-4">
             <form action="./index.php" method="post" class="p-4">
-                <h2 class="text-center mb-4">Registrar nuevo producto</h2>
+                <h2 class="text-center mb-4">Registrar Producto</h2>
                 <div class="input-group mt-3 c-input px-2 p-1 rounded-3">
                     <span class="input-group-text"><i class="bi bi-box"></i></span>
                     <input type="text" class="form-control" id="nombre" placeholder="Ingrese el nombre del producto" name="nombre_p" value="">
@@ -67,9 +61,8 @@ if (!isset($_SESSION['usuario'])) {
         </div>
     </div>
 
-    <div class="row">
-        <div class="col-12 p-5">
-            <table id="myTable" class="display" style="color: white;" >
+
+    <table id="myTable" class="display">
                 <thead>
                     <tr style="background-color:#d14ee2">
                         <th scope="col">Nombre</th>
@@ -84,8 +77,6 @@ if (!isset($_SESSION['usuario'])) {
                     </tr>
                 </tbody>
             </table>
-        </div>
-    </div>
 
     <div class="modal fade" id="editarUsuarioModal" tabindex="-1" aria-labelledby="editarUsuarioModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
@@ -108,13 +99,13 @@ if (!isset($_SESSION['usuario'])) {
                         <input type="email" class="form-control" id="editEmail" placeholder="Email">
                     </div>
                     <div class="mb-3">
-                        <label for="editPassword" class="form-label">Contraseña</label>
-                        <input type="text" class="form-control" id="editPassword" placeholder="Contraseña Actual" value="">
+                        <label for="editPassword" class="form-label">Nueva Contraseña</label>
+                        <input type="password" class="form-control" id="editPassword" placeholder="Contraseña Actual" value="">
                     </div>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                    <button style="background-color:#d14ee2" type="button" class="btn btn-success" id="guardarCambios">Guardar Cambios</button>
+                    <button type="button" class="btn btn-success" id="guardarCambios">Guardar Cambios</button>
                 </div>
             </div>
         </div>
@@ -123,8 +114,7 @@ if (!isset($_SESSION['usuario'])) {
     <script src="./public/js/alerts.js"></script>
     <script src="./public/js/registro_productos.js"></script>
     <script src="./public/js/cerrar_session.js"></script>
-    <script src="./public/js/editar_sesion.js"></script>
-
+    <script src="./public/js/main.js"></script>
 </body>
 
-</html>
+</html>    

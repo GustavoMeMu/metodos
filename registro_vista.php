@@ -14,14 +14,13 @@ if (isset($_SESSION['usuario'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="<?=CSS."bootstrap.min.css";?>">
     <link rel="stylesheet" href="<?=ICONS."bootstrap-icons.css";?>">
-    <link rel="stylesheet" href="../../unidad2/prueba/public/css/registro_vista.css">
-    <title>Página de Registro</title>
+    <link rel="stylesheet" href="<?=CSS."registro_vista.css";?>">
+    <title>Registro</title>
 </head>
 <body class="d-flex justify-content-center align-items-center mt-5 p-3">
     <form action="./registro_vista.php" method="post" class="w-50 p-4 text-center">
         <div class="text-center mb-4 c-user">
-            <i class="bi bi-stars fs-1 text-highlight"></i> 
-            <h2 class="text-white d-inline-block mx-2">Página de Registro</h2>
+            <h2 class="text-white d-inline-block mx-2">Registro</h2>
         </div>
         <div class="input-group mt-3 c-input px-2 p-1 rounded-3">
             <i class="bi bi-person-fill fs-3 text-white mx-1"></i>
@@ -43,8 +42,7 @@ if (isset($_SESSION['usuario'])) {
             <button type="button" id="btn-registrar" class="btn w-100 text-white fs-4">Registrar</button>
         </div>
         <div class="mt-4 d-flex justify-content-center">
-            <p class="text-white">¿Ya tienes cuenta?</p> 
-            <a href="./login.php" class="text-white mx-2">Inicia sesión aquí</a>
+            <a href="./login.php" class="text-white mx-2">Iniciar Sesión</a>
         </div>
     </form>
     <script src="./public/js/alerts.js"></script>

@@ -3,7 +3,12 @@ let btnEditar = false;
 
 const obtener_datos = () => {
     let tablaProducto = document.getElementById('tabla_productos');
-    fetch("app/controller/obtener_datos.php")
+    let data = new FormData();
+    data.append('metodo','obtener_datos')
+    fetch("app/controller/obtener_datos.php",{
+        method: "POST",
+        body: data
+    })
     .then(respuesta => respuesta.json())
     .then((respuesta) => {
         let contenido = ''; 
@@ -29,9 +34,10 @@ const obtener_datos = () => {
         tablaProducto.innerHTML = contenido;
         $('#myTable').DataTable({
             language: {
-                url: './public/json/lenguaje.json' 
-            }
-        });
+                url: './public/json/dt.json' 
+            }
+        });
+    
     });
 }
 
@@ -43,7 +49,8 @@ const registrar_producto = () => {
     data.append("nombre_p",nombre_p); 
     data.append("precio_p",precio_p); 
     data.append("cantidad_p",cantidad_p);
-    fetch("app/controller/registro_productos.php",{
+    data.append("metodo","insertar_datos")
+    fetch("app/controller/obtener_datos.php",{
         method:"POST",
         body: data
     })
@@ -70,7 +77,8 @@ const editar_producto = () => {
     data.append("nombre_p",nombre_p); 
     data.append("precio_p",precio_p); 
     data.append("cantidad_p",cantidad_p); 
-    fetch(`app/controller/actualizar_producto.php`,{
+    data.append("metodo","actualizar_datos");
+    fetch(`app/controller/obtener_datos.php`,{
         method:"POST",
         body: data
     })
@@ -95,7 +103,8 @@ const editar_producto = () => {
 const eliminar_producto = () => {
     let data = new FormData();
     data.append('idInput',editar);
-    fetch('app/controller/eliminar_producto.php', {
+    data.append("metodo","eliminar_datos")
+    fetch('app/controller/obtener_datos.php', {
         method: 'POST',
         body: data
     })
