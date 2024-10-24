@@ -1,82 +1,81 @@
 body {
-    background-image: url('../../public/css/img/fondo.jpeg'); /* Ruta correcta de la imagen */
-    background-position: center; /* Centrado de la imagen de fondo */
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-    margin: 0;
-    color: white;
+    background-image: linear-gradient(to right, #4e54c8, #8f94fb);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Arial', sans-serif;
 }
 
 form {
-    background-color: rgba(0, 0, 0, 0.7); /* Fondo semi-transparente para el formulario */
-    backdrop-filter: blur(10px); /* Efecto de desenfoque */
-    border-radius: 15px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Sombra más pronunciada */
-    padding: 40px;
-    width: 90%; /* Ancho del formulario en dispositivos móviles */
-    max-width: 500px; /* Ancho máximo del formulario */
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(255, 255, 255, 0.5); /* Resplandor blanco */
+    width: 100%;
+    max-width: 400px; /* Contenedor más pequeño */
 }
 
-.c-user i {
-    color: #c081ff; /* Color del icono del usuario */
+.c-user h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #ffffff;
 }
 
 .text-highlight {
-    color: #fff;
-    font-weight: bold;
-    font-size: 2rem;
+    color: #ffca28;
 }
 
-.input-group {
-    background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro para los campos de entrada */
-    border-radius: 10px;
-    margin-bottom: 15px; /* Espacio entre campos */
+.c-input {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    transition: border-color 0.3s ease;
 }
 
-.input-group-text {
-    background-color: transparent; /* Mantener el fondo transparente para el texto */
+.c-input input {
+    background: transparent;
     border: none;
-    color: #fffbfb;
-}
-
-.form-control {
-    background-color: rgba(255, 255, 255, 0.1); /* Fondo de los campos */
     color: #fff;
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    border-radius: 10px;
-    font-size: 1.5rem;
-    padding: 10px; /* Espaciado interno */
+    font-size: 18px;
 }
 
-.form-control:focus {
+.c-input input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.c-input input:focus {
     outline: none;
-    border-color: #ffcc00; /* Borde al enfocar en color amarillo */
+    border-bottom: 2px solid #ffca28;
 }
 
-.c-button .btn {
-    background-color: #4e1a75; /* Color del botón principal */
-    color: white;
-    border-radius: 10px;
-    padding: 10px 20px;
-    font-size: 1.2em;
-    transition: background-color 0.3s; /* Transición suave para el hover */
+.c-input i {
+    color: #ffca28;
 }
 
-.c-button .btn:hover {
-    background-color: #603382; /* Color del botón al pasar el mouse */
-}
-
-a.text-white {
-    color: #ffcc00; /* Color de los enlaces */
+.c-button button {
+    background-color: #ffca28;
+    border: none;
+    color: #333;
+    padding: 10px;
+    font-size: 20px;
     font-weight: bold;
-    text-decoration: underline; /* Subrayado de enlaces */
+    border-radius: 25px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-a.text-white:hover {
-    color: #4e1a75; /* Color de los enlaces al pasar el mouse */
+.c-button button:hover {
+    background-color: #ffb300;
+    transform: scale(1.05);
 }
 
-.text-white {
-    color: #fff; /* Color del texto */
+a {
+    color: #ffca28;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }

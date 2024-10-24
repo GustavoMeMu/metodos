@@ -1,138 +1,104 @@
 body {
-   background-color: #d7b3f6;
-    background-position: 0%;
-    
-    background-size: cover;
+    background-color: #00DBDE;
+background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
+    font-family: 'Arial', sans-serif; /* Fuente general */
 }
 
+h3 {
+    font-size: 3rem;
+    color: #ffffff; /* Color azul oscuro */
+    text-align: center; /* Centrado */
+}
 
-h3{
-    font-size: 3.5rem; /* Aumenta el tamaño de la fuente */
-    color: #ffffff; /* Color de texto oscuro */
-}
-h2 {
-    font-size: 2.5rem; /* Aumenta el tamaño de la fuente */
-    color: #ffffff; /* Color de texto oscuro */
-}
-.c-datos {
-    background-color: rgba(255, 255, 255, 0.135); 
-    border-radius: 20px;
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(15px);
-    -webkit-backdrop-filter: blur(15px);
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    margin-bottom: 20px;
-    padding: 20px; 
+p {
+    text-align: center; /* Centrado */
+    color: #000000; /* Color para el correo */
+    font-size: 1.8rem; /* Tamaño de fuente para el correo */
+    text-decoration: underline; /* Subrayado */
 }
 
 form {
-    width: 100%;
-    max-width: 600px;
+    max-width: 450px; /* Hacer el formulario más pequeño */
     margin: 0 auto;
-    backdrop-filter: blur(10px); 
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.215);
-    border-radius: 20px;
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(15px);
-    -webkit-backdrop-filter: blur(15px);
-    border: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 30px;
+    background-color: #00DBDE;
+background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
 }
 
 .input-group-text {
-    background-color: #420b85; 
-    color: white; 
+    background-color: #008cff; /* Color de fondo del icono azul */
+    color: #fff; /* Color blanco para el icono */
 }
 
 .table {
-    width: 100%;
-    max-width: 100%;
-    margin-top: 20px;
-    border-radius: 15px;
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
-    color: white;
+    width: 80%; /* Ancho de la tabla ajustado */
+    margin-left: 200px; /* Mueve la tabla 20px a la derecha */
+    border-collapse: collapse;
     background-color: rgba(255, 255, 255, 0.9);
-}
-
-.registrar_producto {
-    width: 100%;
-    max-width: 300px;
-    background-color: purple; 
-    border: none;
-    border-radius: 15px;
-    color: #ffffff; 
-    font-size: 1.5rem; 
-    transition: transform 0.2s ease; 
-}
-
-.registrar_producto:hover {
-    transform: scale(1.05); 
-    background-color: #d14ee2;
-    color: black;
-}
-
-.btn-primary {
-    background-color: #c881bb; /* Verde más claro */
-    border: none;
-}
-
-.btn-secondary {
-    background-color: #7d0296; 
-    color: white;
-}
-/* apartir de aqui empieza el modal para editar */
-.modal-content {
-    background-color: rgba(255, 255, 255, 0.9);
+    border: 1px solid #1e3a5f; /* Bordes más oscuros */
     border-radius: 10px;
-}
-
-.modal-header, .modal-footer {
-    border: none;
-}
-
-.modal-header {
-    background-color: #ce85e0; 
-}
-
-.modal-title {
-    color: #3d2d4b; 
-}
-.table {
-    width: 100%; /* Asegúrate de que ocupe el 100% del contenedor */
-    margin-top: 20px; /* Espacio superior */
-    border-collapse: collapse; /* Para que no haya espacios entre celdas */
-    font-family: Arial, sans-serif; /* Cambia la fuente a Arial */
-    color: white;
+    overflow: hidden; /* Para aplicar bordes redondeados */
 }
 
 .table th, .table td {
-    padding: 12px; /* Espaciado interno */
-    text-align: center; /* Alinear texto al centro */
-    font-size: 1rem; /* Tamaño de letra */
-    color: #ffffff; /* Color del texto */
+    padding: 10px; /* Espaciado ajustado */
+    text-align: center;
+    font-size: 1rem;
+    color: #1e3a5f;
+    border-bottom: 1px solid #1e3a5f; /* Añadido borde inferior */
 }
 
 .table thead {
-    background-color: rgba(123, 195, 173, 0.8); /* Color de fondo para encabezados */
-    color: white; /* Color del texto en el encabezado */
+    background-color: #4b86b4; /* Azul más oscuro para encabezados */
+    color: white;
 }
 
 .table tbody tr:nth-child(even) {
-    background-color: rgba(211, 0, 244, 0.3); /* Color de fondo para filas pares */
+    background-color: rgba(160, 196, 255, 0.3); /* Azul claro para filas pares */
 }
 
-
+.table tbody tr:hover {
+    background-color: rgba(160, 196, 255, 0.5); /* Azul claro al pasar el mouse */
+}
 
 .action-btn {
-    padding: 8px 12px; /* Espaciado interno de los botones */
-    background-color: #89019e; /* Color de fondo del botón */
-    border: none; /* Sin borde */
-    border-radius: 5px; /* Bordes redondeados */
-    color: white; /* Color del texto */
-    font-size: 0.9rem; /* Tamaño de la fuente */
-    transition: background-color 0.3s ease; /* Efecto de transición */
+    padding: 8px 12px; /* Ajuste del padding */
+    background-color: #001fb8;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 0.9rem; /* Tamaño de fuente reducido */
+    transition: background-color 0.3s ease;
 }
 
 .action-btn:hover {
-    background-color: #e207c5; /* Cambiar color al pasar el mouse */
+    background-color: #1e3a5f; /* Azul oscuro al pasar el mouse */
+}
+
+.registrar_producto {
+    background-color: #80bfff; /* Azul pastel */
+    border-radius: 15px;
+    color: #1e3a5f;
+    font-size: 1.2rem; /* Tamaño de fuente ajustado */
+    transition: transform 0.3s ease;
+}
+
+.registrar_producto:hover {
+    transform: scale(1.05);
+}
+
+.modal-content {
+    background-color: rgba(0, 167, 186, 0.432);
+    border-radius: 10px;
+}
+
+.modal-header {
+    background-color: #008cff;
+    color: white;
+}
+
+.modal-footer {
+    border-top: none;
 }
